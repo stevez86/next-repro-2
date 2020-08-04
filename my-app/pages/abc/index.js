@@ -4,7 +4,7 @@ export async function getStaticProps(props) {
   console.log('props', props);  // --- @ build: { slug: 'a' } @ runtime: { slug: ['abc', 'a'] }
   return {
     props,
-    unstable_revalidate: 1,
+    revalidate: 1,
   };
 }
 export default Page;
